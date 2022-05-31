@@ -1,0 +1,289 @@
+/* .card{
+
+    margin-top:30px;
+    border-color: orangered;
+    border-width: 6px;
+    box-shadow:10px;
+    border-style: dotted;
+    min-width: 50vw;
+
+} */
+
+.smt-btn {
+    height: 39px;
+    width: 190px;
+    font-size: 14px;
+    color: whitesmoke;
+    font-weight: bold;
+    background-color: orangered;
+    border: 20px;
+    border-radius: 10px;
+    margin: 20px 0px 26px 0px;
+    
+}
+.tbw {
+    max-width: 84vw;
+    font-size:16px; 
+    margin-left: 11px;
+    border-width: 1px;
+    border-color: inherit;
+    border-style: solid;
+    border-collapse: collapse;
+    
+  }
+  .tbg {
+    background-color: rgb(208, 208, 246) !important;
+    height: 26px;
+    max-width: 50vw;
+    color: rgb(0, 0, 0);
+  }
+  .tbw th,
+  .tbg td {
+    padding: 8px;
+  }
+
+  .fld{
+
+    border-radius: 13px;
+    height: 40px;
+    max-width: 100%;
+    outline: none;
+    padding: 5px;
+    
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* .addnew{
+  width: 116px;
+  height: 37px;
+  background: #3247D5;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  border: none;
+  float: right;
+  margin-right: 10px;
+}
+
+.tableheader{                           
+  width: 1199px;
+  height: 50px;
+  right: 20px;
+  top: 264px;
+  background: #02CFFF;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  color:white;
+    }
+    .tabletext{
+      height: 17px;
+      left: 17.5%;
+      right: 76.67%;
+      top: 331px;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 17px;
+      color: #0C275A;
+    }
+
+
+   th{
+     background-color: #02CFFF ;
+     color:white;
+   }
+
+    th:first-of-type {
+      border-top-left-radius: 10px;       
+    }        
+    th:last-of-type {
+
+      border-top-right-radius: 10px;        
+    }      
+    tr:last-of-type td:first-of-type {       
+      border-bottom-left-radius: 10px;      
+    }
+    
+    tr:last-of-type td:last-of-type {      
+      border-bottom-right-radius: 10px;
+    
+    }       
+    table,        
+    tr,        
+    td {      
+      border: none !important;       
+      font-family: Poppins;       
+      font-style: normal;       
+      font-weight: normal;        
+      font-size: 13px;
+      /* line-height: 17px;        */
+      /* color: #0C275A;
+    
+    }      
+    tr:nth-child(odd) {
+    
+      background-color: #FFFFFF !important
+    
+    }       
+    tr:nth-child(even) {
+    
+      background-color: #F2F2F2 !important
+    
+    } */ 
+
+    .headings{
+      height: 15px;
+      /* left: -38px; */
+      top: 22px;
+      position: absolute;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 19px;
+      line-height: 15px;
+      letter-spacing: 0.5px;
+      color: #3247D5;
+  }
+      .addnew{
+        width: 116px;
+        height: 37px;
+        font-size: 14px;
+        font-weight: bold;
+        background: #3247D5;
+        border-radius: 5px;
+        color: white;
+        text-align: center;
+        border: none;
+        float: right;
+       
+      }
+      .addnew1{
+        font-size: 14px;
+        font-weight: 600;
+        color: black;
+        border: none;
+        float: right;
+        position: absolute;
+        top: 67%;
+        left: 197%;
+        font-family: 'Poppins';
+        margin-top: 20px;
+      }
+      .addnew2{
+        width: 116px;
+        height: 37px;
+        font-size: 14px;
+        font-weight: bold;
+        background: #3247D5;
+        border-radius: 5px;
+        color: white;
+        margin-top: 20px;
+        text-align: center;
+        border: none;
+        float: right;
+      }
+      
+    .tableheader{                           
+      /* width: 100vw; */
+      height: 50px;
+      right: 20px;
+      top: 264px;
+      background: #02CFFF;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+      color:white;
+        }
+        .tabletext{
+          height: 17px;
+          left: 17.5%;
+          right: 76.67%;
+          top: 331px;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 17px;
+          color: #0C275A;
+          padding:20px;
+        }
+
+        th{
+          background-color: #02CFFF ;
+          color:white;
+        }
+     
+         th:first-of-type {
+           border-top-left-radius: 10px;  
+           padding: 8px;     
+         }        
+         th:last-of-type {
+     
+           border-top-right-radius: 10px;        
+         }      
+         tr:last-of-type td:first-of-type {       
+           border-bottom-left-radius: 10px;      
+         }
+         
+         tr:last-of-type td:last-of-type {      
+           border-bottom-right-radius: 10px;
+         
+         }       
+         table,        
+         tr,        
+         td {      
+          border: none !important;
+          font-family: Poppins;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          /* line-height: 17px; */
+          color: #0C275A;
+          /* padding: 27px; */
+          /* height: 8vh;*/
+         }      
+         tr:nth-child(odd) {
+         
+           background-color: #FFFFFF !important
+         
+         }       
+         tr:nth-child(even) {
+         
+           background-color: #F2F2F2 !important
+         
+         } 
+
+        .card{ 
+          padding: 41px;
+    background: #ffffff;
+    box-shadow: 1px 1px 15px 3px rgb(0 0 0 / 12%);
+    border-radius: 16px;
+    /* min-width: 84vw; */
+    height: auto;
+    position: relative;
+    /* left: -5%; */
+    margin-top: 53px;
+        }
+
+        .entr-inpt {
+          border-style: solid; 
+          border-width: 1px;
+          /* border-color: orange; */
+          border-radius: 5px;
+          height: 37px;
+          font-size: 14px;
+          width: 82%;
+          /* margin-left: 120px; */
+          font-family: Poppins;
+        }
+        .sub-btnn {
+          border-radius: 8px;
+          height: -9px;
+          width: 30%;
+          text-align: center;
+          color: white;
+          font-family: Poppins;
+          padding: 7px;
+          background-color: #3247D5;
+          text-decoration: none;
+          /* margin-left: 165px; */
+          position: absolute;
+          font-weight: bold;
+          left: 100%;
+      }
+    

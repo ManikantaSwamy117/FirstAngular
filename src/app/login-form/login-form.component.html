@@ -1,0 +1,25 @@
+<div class="container-fuild bgimage">
+  <div class="row">
+    <div class="col-lg-7"></div>
+    <div class="col-lg-5">
+      <div class="card">
+        <div class="row">
+          <div class="col-lg-12 vailaD-img">
+              <img src="assets/Images/logo.png" style="width: 110px;">
+          </div>
+        </div>
+      
+        <input type="text" placeholder="Name" class="entr-inpt" [(ngModel)]="name" name="name"/><br>
+        <input onkeypress="return event.charCode >= 48 && event.charCode <= 57"  maxlength="10" placeholder="PhoneNumber" [(ngModel)]="phone" name="phone" class="entr-inpt" /><br>
+        <input type="email" placeholder="Email" [(ngModel)]="email" name="email"  class="entr-inpt"  /><br>
+        <input type="text" placeholder="Address"  [(ngModel)]="address" name="address" class="entr-inpt" /><br>
+        <input type="text" placeholder="Country" [(ngModel)]="country" name="country" class="entr-inpt" /><br>
+        <input type="text" placeholder="State" [(ngModel)]="state" name="state" class="entr-inpt" /><br>
+        <input type="text" placeholder=" City" [(ngModel)]="city" name="city" class="entr-inpt" /><br>
+        <input type="button" class="smt-btn" value="Submit" id="submit" (click)="login()">
+
+
+      </div>
+    </div>
+
+    

@@ -1,0 +1,266 @@
+.card {
+  border-radius: 16px;
+  height: 284px;
+  width: 100%;
+  margin-top: 10px;
+  background-color: white;
+  padding: 10px
+}
+
+.card1{
+  border-radius: 16px;
+  height: 336px;
+  width: 100%;
+  margin-top: 10px;
+  background-color: white;
+  padding: 10px
+}
+.para {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: bold;
+  color: whitesmoke;
+  margin-top: 22px;
+  margin-left: -56%;
+}
+.boder1 {
+  background-color: rgb(119, 186, 231);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 80px;
+  width: 101%;
+  margin-left: -1px;
+}
+.boder2 {
+  background-color: rgb(219, 179, 20);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 80px;
+  width: 101%;
+  margin-left: -1px;
+}
+.boder3 {
+  background-color: rgb(90, 115, 229);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 80px;
+  width: 101%;
+  margin-left: -1px;
+}
+.boder4 {
+  background-color: skyblue;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 80px;
+  width: 101%;
+  margin-left: -1px;
+}
+
+.num-para {
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 70px;
+  font-weight: bold;
+}
+/* .veiw-para {
+    width: 158px;
+    margin-top: -61px;
+    height: 30px;
+    margin-left: 77px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+    font-size: 14px;
+    outline: none;
+    font-family: "Poppins";
+  } */
+.small-card {
+  border-radius: 16px;
+  height: 72px;
+  width: 25%;
+  /* margin: 0px 0 0 9px; */
+  position: absolute;
+  top: -10%;
+  left: 6%;
+  margin-top: 52px;
+  /* background-color: whitesmoke; */
+}
+.bg-img {
+  border-radius: 16px;
+  height: 166px;
+  width: 90%;
+  /* margin: 0px 0 0 9px; */
+  /* position: absolute;
+    top: -10%;
+    left: 6%; */
+  /* margin-top: 52px; */
+  /* background-color: whitesmoke; */
+}
+
+.para1 {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+
+.box2 {
+  height: 4vh;
+  width: 100%;
+  border-width: 2px;
+  background-color: aqua;
+}
+
+.box {
+  height: 30px;
+  width: 69px;
+  border-radius: 20px;
+  border-width: 2px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: white;
+}
+ul li {
+  display: inline;
+  font-size: 19px;
+  font-weight: bolder;
+  font-weight: bolder;
+  margin-left: 9px;
+  padding: 3px;
+}
+
+.serch-bar {
+  min-width: 28vw;
+  height: 36px;
+  border-radius: 6px;
+  border-width: 2px;
+  margin-left: 179%;
+}
+.serch-bar::placeholder {
+  font-family: Poppins;
+  padding: 8px;
+}
+.head-para {
+  padding: 20px;
+  font-family: poppins;
+  font-weight: 600;
+  font-size: 14px;
+}
+.head-para1 {
+  padding: 20px;
+  font-family: poppins;
+  font-weight: bold;
+  font-size: 20px;
+  color: blue;
+  margin-bottom: -4px;
+}
+.parapa1 {
+  text-align: Center;
+  background-color: rgb(215, 51, 51);
+  border-radius: 20px;
+  padding: 6px;
+  width: 68px;
+  height: 37px;
+}
+.parapa2 {
+    text-align: Center;
+    background-color: rgb(32, 204, 147);
+    border-radius: 20px;
+    padding: 6px;
+    width: 68px;
+    height: 37px;
+  }
+  .parapa3 {
+    text-align: Center;
+    background-color: rgb(37, 146, 234);
+    border-radius: 20px;
+    padding: 6px;
+    width: 68px;
+    height: 37px;
+  }
+  .parapa4 {
+    text-align: Center;
+    background-color: rgb(222, 149, 30);
+    border-radius: 20px;
+    padding: 6px;
+    width: 68px;
+    height: 37px;
+  }
+
+  .parapa5 {
+    text-align: Center;
+    background-color: rgb(73, 241, 106);
+    border-radius: 20px;
+    padding: 6px;
+    width: 68px;
+    height: 37px;
+  }
+
+  .parapa6 {
+    text-align: Center;
+    background-color: rgb(17, 61, 126);
+    border-radius: 20px;
+    padding: 6px;
+    width: 68px;
+    height: 37px;
+  }
+
+  .parapa7 {
+    text-align: Center;
+    background-color: rgb(25, 217, 163);
+    border-radius: 20px;
+    padding: 6px;
+    width: 68px;
+    height: 37px;
+  }
+
+  .parapa8 {
+    text-align: Center;
+    background-color: rgb(18, 180, 235);
+    border-radius: 20px;
+    padding: 6px;
+    width: 68px;
+    height: 37px;
+  }
+
+  .parapa9 {
+    text-align: Center;
+    background-color: rgb(224, 15, 158);
+    border-radius: 20px;
+    padding: 6px;
+    width: 68px;
+    height: 37px;
+  }
+  .sub-btnn {
+    border-radius: 8px;
+    height: -9px;
+    width: 65%;
+    text-align: center;
+    color: white;
+    font-family: Poppins;
+    padding: 7px;
+    background-color: #3247D5;
+    text-decoration: none;
+    position: absolute;
+    font-weight: bold;
+    left: 15%;
+    border:none;
+}
+.st-date{
+
+  width: 116px;
+  padding: 2px;
+  height: 26px;
+  border-radius: 6px;
+  outline: none;
+}
+.st-para{
+color:blue;
+  font-family: 'Poppins';
+font-size: bold;
+font-size: 14px;
+
+
+}
+

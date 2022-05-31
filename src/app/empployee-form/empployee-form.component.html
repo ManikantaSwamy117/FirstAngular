@@ -1,0 +1,46 @@
+<div class="container-fuild">
+  <br /><br /><br />
+  <div class="card">
+    <br /><br />
+    <div class="row">
+      <div class="col-lg-3">
+        <label>Holidays*</label>
+        <input type="text" placeholder="HolidayName"  class="entr-inpt"  [(ngModel)]="holidays"
+        name="holidays"/>
+      </div>
+
+      <div class="col-lg-3">
+        <label>Holiday Description*</label>
+        <input type="text" placeholder="Holiday Description" class="entr-inpt" [(ngModel)]="holidaydescription"  name="holidaydescription" />
+      </div>
+
+      <div class="col-lg-3">
+        <label>HolidayDate*</label>
+        <input type="Date" placeholder="Select Your Date"   class="entr-inpt" [(ngModel)]="holidayDate"  name="holidayDate"/>
+      </div>
+      <div class="col-lg-3">
+        <label>Location*</label>
+        <input type="text" placeholder="Enter Your  Location"  class="entr-inpt"  [(ngModel)]="location"  name="location"/>
+      </div>
+    </div>
+    <br /><br /><br />
+
+    <div class="row">
+      <div class="col-lg-3">
+        <label>Attachment*</label>
+        <input type="file" placeholder="Choose Your File"  class="entr-inpt" [(ngModel)]="attachment"  name="attachment" />
+      </div>
+      <div class="col-lg-3"></div>
+     <!-- <div class="col-lg-3">
+       <input type="button" class="smt-btn" value="Submit" (click)="InsUert()">
+      </div> -->
+      <div class="col-lg-2">
+        <button class="smt-btn"  (click)="post()">{{submit}}</button>
+       </div>
+
+       <div class="col-lg-3">
+        <button class="smt-btn"  routerLink="/HolidayDashboard">Cancel</button>
+       </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,287 @@
+<!-- <div class="container">
+  <h2
+    style="
+      text-align: center;
+      margin-top: 20px;
+      color: fuchsia;
+      font-size: 40px;
+      color: red;
+      font-family: Poppins;
+      font-weight: bolder;
+    "
+  >
+    Student-Data
+  </h2>
+
+  <div class="row">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-2">
+      <input
+        class="fld"
+        type="text"
+        placeholder="enteryourname"
+        [(ngModel)]="Name"
+        name="Name"
+      />
+      <br />
+      <br />
+      <input
+        class="fld"
+        type="text"
+        placeholder="Phonenumber"
+        [(ngModel)]="Phnumber"
+        name="phnumber"
+      />
+      <br />
+      <br />
+      <input
+        class="fld"
+        type="text"
+        placeholder="Email"
+        [(ngModel)]="Email"
+        name="Email"
+      />
+      <input
+        class="fld"
+        class="smt-btn"
+        type="submit"
+        value="Submit"
+        (click)="insertDetails()"
+      />
+      <br />
+    </div>
+    <div class="col-lg-6">
+      <input
+        class="fld"
+        type="text"
+        placeholder="Address"
+        [(ngModel)]="Address"
+        name="Address"
+      />
+      <br />
+      <br />
+      <input
+        class="fld"
+        type="text"
+        placeholder="Country"
+        [(ngModel)]="Country"
+        name="Country"
+      />
+      <br />
+      <br />
+      <input
+        class="fld"
+        type="text"
+        placeholder="State"
+        [(ngModel)]="State"
+        name="State"
+      />
+      <br />
+      <br />
+      <input
+        class="fld"
+        type="text"
+        placeholder="City"
+        [(ngModel)]="City"
+        name="City"
+      />
+    </div>
+  </div>
+  -->
+
+<!-- <div class="row">
+    <table class="tbw">
+      <tr class="tbg">
+        <th>ID</th>
+        <th>Name</th>
+        <th>Phonenumber</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th>Country</th>
+        <th>State</th>
+        <th>City</th>
+      </tr>
+
+      <tr *ngFor="let details of studentList">
+        <td
+          style="
+            border-width: 1px;
+            padding: 11px;
+            font-size: 14px;
+            color: whitesmoke;
+            font-weight: bold;
+            background-color: red;
+          "
+        >
+          {{ details.id }}
+        </td>
+        <td
+          style="
+            border-width: 1px;
+            padding: 11px;
+            font-size: 14px;
+            color: whitesmoke;
+            font-weight: bold;
+            background-color: yellowgreen;
+          "
+        >
+          {{ details.name }}
+        </td>
+        <td
+          style="
+            border-width: 1px;
+            padding: 11px;
+            font-size: 14px;
+            color: whitesmoke;
+            font-weight: bold;
+            background-color: blue;
+          "
+        >
+          {{ details.phnumber }}
+        </td>
+        <td
+          style="
+            border-width: 1px;
+            padding: 11px;
+            font-size: 14px;
+            color: whitesmoke;
+            font-weight: bold;
+            background-color: orangered;
+          "
+        >
+          {{ details.email }}
+        </td>
+        <td
+          style="
+            border-width: 1px;
+            padding: 11px;
+            font-size: 14px;
+            color: whitesmoke;
+            font-weight: bold;
+            background-color: brown;
+          "
+        >
+          {{ details.address }}
+        </td>
+        <td
+          style="
+            border-width: 1px;
+            padding: 11px;
+            font-size: 14px;
+            color: whitesmoke;
+            font-weight: bold;
+            background-color: burlywood;
+          "
+        >
+          {{ details.country }}
+        </td>
+        <td
+          style="
+            border-width: 1px;
+            padding: 11px;
+            font-size: 14px;
+            color: whitesmoke;
+            font-weight: bold;
+            background-color: orange;
+          "
+        >
+          {{ details.state }}
+        </td>
+        <td
+          style="
+            border-width: 1px;
+            padding: 11px;
+            font-size: 14px;
+            color: whitesmoke;
+            font-weight: bold;
+            background-color: black;
+          "
+        >
+          {{ details.city }}
+        </td>
+      </tr>
+    </table>
+  </div> -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-11">
+      <label class="headings"> Employee Report</label>
+    </div>
+    <div class="col-lg-1">
+      <p class="addnew1">Count:25</p>
+      <!-- <button routerLink="/DashBoardForm" class="addnew1">Add</button> -->
+    </div>
+  </div>
+  <div class="row">
+    <div class="card">
+      <div class="row">
+        <div class="col-lg-1">
+          <span style="font-family:Poppins;font-weight:600;font-size:14px;">Filter By</span>
+        </div>
+        <div class="col-lg-3">
+          <select class="entr-inpt" id="employeeid" name="employeeid" [(ngModel)]="employeeid" (change)="filterEmployee()">
+            <option value="Select Training" >Select Employee</option>
+            <option value="{{list.id}}" *ngFor="let list of studentList" >{{list.name}}</option>
+           
+          </select>
+        </div>
+        <div class="col-lg-2">
+          <select class="entr-inpt" id="employeeid" name="employeeid" [(ngModel)]="employeeid" (change)="filterEmployee()">
+            <option value="Select Training" >Select State</option>
+            <option value="{{list.id}}" *ngFor="let list of studentList" >{{list.state}}</option>
+           
+          </select>
+        </div>
+        <div class="col-lg-2">
+          <select class="entr-inpt" id="employeeid" name="employeeid" [(ngModel)]="employeeid" (change)="filterEmployee()">
+            <option value="Select Training" >Select City</option>
+            <option value="{{list.id}}" *ngFor="let list of studentList" >{{list.city}}</option>
+           
+          </select>
+        </div>
+        <div class="col-lg-3">
+          <a href="DashBoardForm" class="sub-btnn">ADD</a>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br />
+  <br />
+  <div class="row">
+    <div class="col-lg-12">
+      <div>
+        <table class="table">
+          <tr class="tableheader">
+            <th>ID</th>
+            <th>Name</th>
+            <th>PhoneNumber</th>
+            <th>Email</th>
+            <th>Address</th>
+            <th>Country</th>
+            <th>State</th>
+            <th>City</th>
+            <th>Action</th>
+          </tr>
+          <tr *ngFor="let list of studentList" class="tabletext">
+            <td>{{ list.id }}</td>
+            <td>{{ list.name }}</td>
+            <td>{{ list.phnumber }}</td>
+            <td>{{ list.email }}</td>
+            <td>{{ list.address }}</td>
+            <td>{{ list.country }}</td>
+            <td>{{ list.state }}</td>
+            <td>{{ list.city }}</td>
+
+            <td>
+              <button (click)="delete(list.id)" class="addnew">delete</button><br>
+              <br>
+              <button [routerLink]="['/DashBoardForm',list.id]" class="addnew2">Edit</button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

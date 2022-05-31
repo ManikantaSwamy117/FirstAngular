@@ -1,0 +1,74 @@
+.card-img{
+
+background-image: url('/assets/Images/vhoa0.jpg');
+min-height: 149vh;
+
+/* background-repeat: no-repeat;*/
+background-position:fixed; 
+
+}
+.login-form{
+
+font-size: 24px;
+color: whitesmoke;
+text-align: center;
+}
+.inpt-text{
+
+    font-size: 18px;
+    font-weight: bold;
+    color: whitesmoke;
+
+}
+.body{
+
+margin:80px 0 50px 0;
+padding: 0;
+font-size: 45px;
+opacity: 0.5px;
+font-family: Poppins;
+color: red;
+font-weight: bolder;
+
+}
+.entr-inpt:focus{
+
+    display: auto;
+
+}
+.entr-inpt{
+
+border:8px;
+border-radius: 5px;
+height: 41px;
+width:50%;
+margin: 10px 10px;
+font-family: Poppins;
+
+}
+.rember-text{
+
+    color: red;
+    margin: 10px 10px;
+}
+
+.smt-btn{
+
+    height: 45 px;
+    width: 8%;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    background-color:orangered;
+    border: 20px;
+    border-radius: 8px;;
+    margin:45px 0 0 34px;
+  
+}
+
+.mrg-space{
+
+margin: 10px 10px;
+
+
+}

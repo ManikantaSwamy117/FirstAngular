@@ -1,0 +1,68 @@
+<div class="container">
+    <br> <br> <br>
+<div class="card">
+    <br /><br />
+    <div class="row">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-2">
+        <label>Employee ID*</label>
+        <input type="text" placeholder="Enter your ID"  class="entr-inpt"  [(ngModel)]="employeeID"
+        name="employeeID"/>
+      </div>
+
+      <div class="col-lg-2">
+        <label>EmployeeName*</label>
+        <input type="text" placeholder="Enter Your Name" class="entr-inpt" [(ngModel)]="employeeName"  name="employeeName" />
+      </div>
+
+      <div class="col-lg-2">
+        <label>EmployeeRole*</label>
+        <input type="text" placeholder="Enter Your Role"   class="entr-inpt" [(ngModel)]="employeeRole"  name="employeeRole"/>
+      </div>
+      <div class="col-lg-2">
+        <label>DateOfJoining*</label>
+        <input type="date" placeholder="Select Date"  class="entr-inpt"  [(ngModel)]="dateOfJoining"  name="dateOfJoining"/>
+      </div>
+    </div>
+    <br /><br /><br />
+
+    <div class="row">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-2">
+        <label>Gender*</label>
+        <input type="text" placeholder="Mention Your Gender"  class="entr-inpt" [(ngModel)]="gender"  name="gender" />
+      </div>
+      <div class="col-lg-2">
+        <label>WorkLocation*</label>
+        <input type="text" placeholder="WorkLocation"  class="entr-inpt" [(ngModel)]="workLocation"  name="workLocation" />
+      </div>
+
+      <div class="col-lg-2">
+        <label>Salary*</label>
+        <input type="text" placeholder="Salary"  class="entr-inpt" [(ngModel)]="salary"  name="salary" />
+      </div>
+
+      <div class="col-lg-2">
+        <label>Address*</label>
+        <input type="text" placeholder="Enter Your Address"  class="entr-inpt" [(ngModel)]="address"  name="address" />
+      </div>
+
+      <div class="col-lg-2">
+        <label>Pincode*</label>
+        <input type="text" placeholder="Enter Your Pincode"  class="entr-inpt" [(ngModel)]="pincode"  name="pincode" />
+      </div>
+
+</div><br /><br />
+<div class="row">
+    <div class="col-lg-8"></div>
+    <div class="col-lg-1">
+    <button class="smt-btn" (click)="post()">{{Submit}}</button>
+   </div>
+   <div class="col-lg-2">
+    <button class="smt-btn"  routerLink="/AmazeData">Cancel</button>
+   </div>
+   <br />
+   <br />
+</div>
+
+</div>

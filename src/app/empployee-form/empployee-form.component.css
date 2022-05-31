@@ -1,0 +1,47 @@
+.card {
+  height: 50vh;
+  width: 98%;
+  padding:21px;
+  background: #ffffff;
+  box-shadow: 1px 1px 15px 3px rgb(0 0 0 / 12%);
+  border-radius: 5px;
+
+}
+.label-text{
+
+font-family: 'Poppins';
+font-size: 14px;
+font-weight: 500;
+color:black;
+
+
+}
+.inpt-fled{
+  font-family: 'Poppins';
+}
+.smt-btn {
+  height: 39px;
+  width: 100px;
+  font-size: 14px;
+  color: whitesmoke;
+  font-weight: bold;
+  background-color: orangered;
+  border: 20px;
+  border-radius: 10px;
+  margin-top:28px
+}
+.smt-btn:hover {
+
+background-color: blue;
+
+}
+.entr-inpt {
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  height: 39px;
+  padding: 5px;
+  font-size: 14px;
+  width: 100%;
+  font-family: Poppins;
+}

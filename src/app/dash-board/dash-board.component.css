@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.bbx {
+  border: 1px solid red;
+  padding: 50px;
+  margin-top: 2%;
+  max-height: 100vh;
+  min-width: 100vw;
+}
+.head-top {
+  color: black;
+  font-weight: bolder;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 35px;
+  margin-top:10px;
+  text-align: center;
+}
+
+.tbw {
+  max-width: 80vw;
+  /* margin-top: 26px; */
+  margin-left: 18px;
+  border-width: 1px;
+  border-color: inherit;
+  border-style: solid;
+  border-collapse: separate;
+  padding: 0px;
+}
+  
+
+.tbg {
+  background-color: rgb(152, 152, 174) !important;
+  height: 26px;
+  max-width: 50vw;
+  color: ghostwhite;
+}
+.tbw th,
+.tbg1 td {
+  padding: 8px;
+}
+
+.smt-btn {
+  height: 40px;
+  width: 120px;
+  font-size: 14px;
+  color: whitesmoke;
+  font-weight: bold;
+  background-color: orangered;
+  border: 20px;
+  border-radius: 48px;
+  position: absolute;
+  left: 44%;
+  top: 42%;
+  /* margin: 80px 0 0 700px; */
+  /* align-items: center;*/
+}
+

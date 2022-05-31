@@ -1,0 +1,28 @@
+<div class="container-fuild">
+  <h2 class="head-top">Student-Table</h2>
+  <div class="row">
+    <table class="tbw">
+      <tr class="tbg">
+        <th>ID</th>
+        <th>EmployeName</th>
+        <th>SureName</th>
+        <th>EmployeRole</th>
+        <th>idNumber</th>
+        <th>MobileNumber</th>
+        <th>address</th>
+        <th>Pincode</th>
+      </tr>
+
+      <tr *ngFor="let details of officeList">
+        <td>{{ details.id }}</td>
+        <td>{{ details.employeName }}</td>
+        <td>{{ details.sureName }}</td>
+        <td>{{ details.employeRole }}</td>
+        <td>{{ details.idNumber }}</td>
+        <td>{{ details.mobileNumber }}</td>
+        <td>{{ details.address }}</td>
+        <td>{{ details.pincode }}</td>
+      </tr>
+    </table>
+  </div>
+</div>

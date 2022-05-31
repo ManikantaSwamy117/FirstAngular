@@ -1,0 +1,115 @@
+<div class="container-fluid" style="background-color: #e1f4f5">
+  <div class="row">
+    <div class="col-lg-11">
+      <br />
+      <label class="headings">Company Dashboard </label>
+    </div>
+  </div>
+  <br />
+  <div class="card">
+    <div class="row">
+      <div class="col-lg-2">
+        <h6
+          style="
+            font-family: Poppins;
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 600;
+          "
+        >
+          Filter By
+        </h6>
+      </div>
+      <div class="col-lg 4">
+        <input
+          type="text"
+          placeholder="search"
+          class="form-control"
+          style="width: 50%; font-family: Poppins"
+        />
+        <!-- <select  style="width:50%" name="" id="" class="form-control" placeholder="Select Department">
+                    <option value="">Select Department</option>
+                    <option value=""></option>
+                    <option value=""></option>
+
+                </select> -->
+      </div>
+    </div>
+  </div>
+  <br />
+  <br />
+
+  <div class="row">
+    <div class="col-lg-10">
+      <label class="heading11">SHOWING 2RESULTS</label>
+    </div>
+
+    <div class="col-lg-2">
+      <td>
+        <button
+          routerLink="/CompanyDetails"
+          class="addnew"
+          style="margin-left: 77px"
+        >
+          ADD
+        </button>
+        <br />
+        <br />
+      </td>
+    </div>
+  </div>
+  <br />
+  <br />
+
+  <div class="row" style="overflow-x: auto; width: 100%">
+    <div class="col-lg-12">
+      <div>
+        <table class="table">
+          <tr>
+            <th>ID</th>
+            <th>Company ID</th>
+            <th>Company Name</th>
+            <th>Address</th>
+            <th>Phone No.</th>
+            <th>Email</th>
+            <th>ContactPerson Name</th>
+            <th>Reg. Date</th>
+            <th>NO Of Employees</th>
+            <th>Action</th>
+          </tr>
+          <tr *ngFor="let list of companydetails">
+            <td>{{ list.id }}</td>
+            <td>{{ list.companyID }}</td>
+            <td>{{ list.companyName }}</td>
+            <td>{{ list.address }}</td>
+            <td>{{ list.phoneNumber }}</td>
+            <td>{{ list.email }}</td>
+            <td>{{ list.contactPersonName }}</td>
+            <td>{{ list.regDate }}</td>
+            <td>{{ list.noOFEmployees }}</td>
+            <td>
+              <button (click)="edit(list.id)" class="addnew">Edit</button>
+              <br />
+              <button (click)="delete(list.id)" class="addnew1">Delete</button>
+            </td>
+          </tr>
+
+          <!-- <tr>
+                        <td>1007</td>
+                        <td>Google</td>
+                        <td>Mysore</td>
+                        <td>98745635675</td>
+                        <td>sindhu123@gmail.com</td>
+                        <td>Sindhu</td>
+                        <td>Apr 13,2009</td>
+                        <td>2000</td>
+                        <td><button class="addnew">Edit</button> </td>
+
+                    </tr> -->
+        </table>
+      </div>
+    </div> <br> 
+  </div> <br>
+  <div class="row"></div>
+  <br>  
+</div>

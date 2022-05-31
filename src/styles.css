@@ -1,0 +1,145 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.side-view {
+  /* height: 100px; */
+  width:100px;
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: bold;
+  color: black;
+  padding: 0%;
+}
+
+*{
+
+height:fit-content;
+
+}
+.side-bar-nav {
+  background-color: aliceblue;
+  height: 99vh;
+  width: 100%;
+  overflow-y: auto;
+  /* border-radius: 5px;
+  margin-left: 12px; */
+}
+
+.topnav {
+  height: 78px;
+  background-color: #1e48d4;
+  display: inline-block;
+}
+
+.logo-img {
+  height: 104px;
+  /* width: 121px; display: inline-block; */
+  padding: 2px;
+  position: relative;
+  top: -7px;
+  left: -39px;
+ 
+}
+.box1 {
+  height: 40px;
+  width: 62px;
+  background-color: whitesmoke;
+  border: 7px;
+  display: inline-block;
+  position: relative;
+  /* top: 5%; */
+  margin-top: 25px;
+  left: 9%;
+  border-radius: 6px;
+}
+.box2 {
+  height: 40px;
+  width: 62px;
+  background-color: whitesmoke;
+  border: 7px;
+  display: inline-block;
+  position: relative;
+  top: 5%;
+  left: 11%;
+  border-radius: 6px;
+}
+
+.box3 {
+  height: 40px;
+  width: 62px;
+  background-color: whitesmoke;
+  border: 7px;
+  display: inline-block;
+  position: relative;
+  top: 5%;
+  left: 13%;
+  border-radius: 6px;
+}
+
+.heading {
+  height: 15px;
+  left: 30%;
+  position: absolute;
+  top: 35px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  color: whitesmoke;
+  display: inline-block;
+}
+/* 
+.drop-btn {
+  background-color: white;
+  padding: 8px;
+  font-size: 15px;
+  font-family: Poppins;
+  color: black;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 90px;
+  margin-top: 26px;
+  margin-left: 30px;
+} */
+/* .dropdown {
+  position: absolute;
+  left: 100%;
+ 
+} */
+
+/* .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+} */
+.time {
+  height: 65%;
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 19%;
+  margin-top: 4px;
+  margin-right: 10px;
+  left: 20.5%;
+  right: 75.28%;
+  top: 25.71%;
+  bottom: 24.29%;
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.time1 {
+  text-align: center;
+  letter-spacing: -0.05em;
+  color: #0c275a;
+  margin-top: -2px;
+  font-family: "Poppins";
+  font-size: 30px;
+}

@@ -1,0 +1,29 @@
+.line-img{
+  height: 34px;
+  width: 54px;
+  margin: 7px 0 4px -8px;
+  /* position: relative; */
+  /* left: -6%;*/
+}
+
+  a:link {
+    color: rgb(71, 8, 245);
+  }
+  a:hover {
+    color: red;
+  }
+  
+  /* selected link */
+  a:active {
+    color: yellow;
+  } 
+  .Side-text{
+    margin: -28px 0 0 36px;
+    text-decoration: none;
+    padding: -2px;
+    width:100%;
+}
+.br-line{
+
+  min-width:13vw;
+}

@@ -1,0 +1,35 @@
+<div class="container-fuild">
+  <h2 class="head-top">IDDetails</h2>
+  <div class="row">
+    <table class="tbw">
+      <tr class="tbg">
+        <th>ID</th>
+        <th>StudentName</th>
+        <th>StudentFatherName</th>
+        <th>RoleNumber</th>
+        <th>Study</th>
+        <th>section</th>
+        <th>Address</th>
+        <th>MobileNumber</th>
+        <th>City</th>
+        <th>Pincode</th>
+
+
+      </tr>
+      <tr *ngFor="let details of employeeList">
+        <td>{{ details.id }}</td>
+        <td>{{ details.studentName }}</td>
+        <td>{{ details.studentFatherName }}</td>
+        <td>{{ details.roleNumber }}</td>
+        <td>{{ details.study }}</td>
+        <td>{{ details.section }}</td>
+        <td>{{ details.address }}</td>
+        <td>{{ details.mobileNumber }}</td>
+        <td>{{ details.city }}</td>
+        <td>{{ details.pincode }}</td>
+      </tr>
+    </table>
+  </div>
+
+  <input class="smt-btn" type="submit" value="Submit" />
+</div>

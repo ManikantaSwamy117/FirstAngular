@@ -1,0 +1,89 @@
+
+<div
+class="container-fluid">
+<div class="row">
+  <div class="col-lg-11">
+    <br />
+    <label class="headings">AmazeEmployeeDetails Dashboard </label>
+  </div>
+</div>
+<br />
+<div class="card">
+  <div class="row">
+    <div class="col-lg-2">
+      <h6
+        style="
+          font-family: Poppins;
+          margin-top: 8px;
+          font-size: 14px;
+          font-weight: 600;
+        "
+      >
+        Filter By
+      </h6>
+    </div>
+    <div class="col-lg 4">
+      <input type="text" placeholder="search" class="form-control" style="width: 50%; font-family: Poppins" />
+    
+    </div>
+  </div>
+</div>
+<br />
+<br />
+
+<div class="row">
+  <div class="col-lg-10">
+    <label class="heading11">SHOWING 2RESULTS</label>
+  </div>
+
+  <div class="col-lg-2">
+    <td>
+      <button routerLink="/AmazeStaffDetails" class="addnew" style=" margin-left: 77px;">ADD</button>
+      <br />
+      <br />
+    </td>
+  </div>
+ 
+</div>
+<br />
+<br />
+
+<div class="row">
+  <div class="col-lg-12">
+    <div>
+      <table class="table">
+        <tr>
+          <th>ID</th>
+          <th>EmployeeID</th>
+          <th>EmployeeName</th>
+          <th>EmployeeRole</th>
+          <th>DateOfJoining</th>
+          <th>Gender</th>
+          <th>WorkLocation</th>
+          <th>Salary</th>
+          <th>Address</th>
+          <th>Pincode</th>
+          <th>Action</th>
+        </tr>
+        <tr *ngFor="let list of AmazeEmployeeDetails">
+          <td>{{ list.id }}</td>
+          <td>{{ list.employeeID }}</td>
+          <td>{{ list.employeeName }}</td>
+          <td>{{ list.employeeRole }}</td>
+          <td>{{ list.dateOfJoining }}</td>
+          <td>{{ list.gender }}</td>
+          <td>{{ list.workLocation }}</td>
+          <td>{{ list.salary }}</td>
+          <td>{{ list.address }}</td>
+          <td>{{ list.pincode }}</td>
+          <td>
+            <button (click)="edit(list.id)" class="addnew">Edit</button>
+            <br />
+            <button (click)="delete(list.id)" class="addnew1">Delete</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+</div>

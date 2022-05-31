@@ -1,0 +1,78 @@
+
+<div class="container-fluid" style="background-color: rgb(187, 225, 241);height:100vh;
+">
+    <div class="row">
+        <div class="col-lg-11">
+            <br>
+            <label class="headings">Holiday Dashboard </label>
+        </div>
+    </div>
+<br>
+    <div class="card">
+        <div class="row">
+            <div class="col-lg-2">
+                <h6>Filter By</h6>
+            </div>
+            <div class="col-lg 2">
+                <select  style="width:50%"  id="Holidayid" name="Holidayid" [(ngModel)]="Holidayid" class="form-control"  (change)="filterHolidays()">
+                    <option value="">Select holidayDescription</option>
+                    <option value="{{ list.id }}" *ngFor="let list of holiday">
+                        {{list.holidayDescription}}
+                      </option>
+                </select>
+            </div>
+          
+        </div>
+    </div>
+    <br>
+
+
+
+    <div class="row">
+        <div class="col-lg-10">
+            <label class="headings">SHOWING RESULTS</label>
+        </div>
+        <div class="col-lg-2">
+        
+            <button routerLink='/EmployeeForm' class="addnew1">ADD NEW</button>
+        </div>
+    </div>
+
+<br>
+
+    <div class="row ">
+        <div class="col-lg-12">
+            <div>
+                <table class="table">
+                    <tr>
+                        <th>ID</th>
+                        <th>Holidays</th>
+                        <th>Holiday Description</th>
+                        <th>Holiday Date</th>
+                        <th>Location</th>
+                        <th>Attachment</th>
+                        <th>Actions</th>
+                       
+                    </tr>
+                    <tr *ngFor="let list of holiday">
+                        <td>{{list.id}}</td>
+                        <td>{{list.holidays}}</td>
+                        <td>{{list.holidayDescription}}</td>
+                        <td>{{list.holidayDate}}</td>
+                        <td>{{list.location}}</td>
+                        <td><img src="{{list.attchament}}" style="height:73px;width:100px"></td>
+
+
+                        <td><button (click)="edit(list.id)" class="addnew">Edit</button>
+                            <br>
+                            <br>
+                            <button (click)="delete(list.id)" class="addnew">Delete</button>
+                        </td>
+                        
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>

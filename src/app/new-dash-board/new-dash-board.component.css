@@ -1,0 +1,70 @@
+.card {
+  border-radius: 16px;
+  /* height:40vh; */
+  width: 100%;
+  margin-top: 52px;
+  background-color: whitesmoke;
+}
+.para {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: bold;
+  color: whitesmoke;
+  margin-top: 22px;
+}
+.boder1 {
+  background-color:#00d2ff;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  /* height: 80px; */
+  width: 101%;
+  margin-left: -1px;
+}
+.boder2 {
+  background-color: #ffb280;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  /* height: 80px; */
+  width: 101%;
+  margin-left: -1px;
+}
+.boder3 {
+  background-color:#00d2ff;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  /* height: 80px; */
+  width: 101%;
+  margin-left: -1px;
+}
+.boder4 {
+  background-color: skyblue;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  /* height: 80px; */
+  width: 101%;
+  margin-left: -1px;
+}
+
+.num-para {
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 70px;
+  font-weight: bold;
+}
+.veiw-para {
+  width: 158px;
+  margin-top: -61px;
+  height: 30px;
+  margin-left: 77px;
+  border-radius: 5px;
+  background-color:#1e48d4 ;
+  color: white;
+  font-size: 14px;
+  border:none;
+  text-align: center;
+  text-decoration: none;
+  padding-top:5px;
+  outline: none;
+  font-family: "Poppins";
+}

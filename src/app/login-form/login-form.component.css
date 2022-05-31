@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.bgimage {
+  background-image: url("../../assets/Images/Homebg1.ee459c8cb7213ef6eb72.png");
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+}
+.card {
+  margin-top: 30px;
+  border-radius: 16px;
+  min-height: auto;
+  width: 32vw;
+}
+.oppset {
+  padding: 5px;
+  width: 360px;
+  border-radius: 6px;
+  margin-left: 72px;
+  outline: none;
+}
+.vailaD-img {
+  text-align: center;
+}
+.entr-inpt {
+  border-style: solid;
+  border-width: 1px;
+  border-color: orange;
+  border-radius: 5px;
+  height: 41px;
+  font-size:14px;
+  width: 50%;
+  margin-left: 120px;
+  font-family: Poppins;
+}
+.entr-inpt:focus{
+  outline: none;
+}
+.smt-btn {
+  height: 39px;
+  width: 190px;
+  font-size: 14px;
+  color: whitesmoke;
+  font-weight: bold;
+  background-color: orangered;
+  border: 20px;
+  border-radius: 10px;
+  margin-left: 28%;
+  margin-bottom: 45px;
+}
+.smt-btn:hover {
+
+background-color: blue;
+
+}

@@ -1,0 +1,32 @@
+.card{
+    height:auto;
+    width:100%;
+    
+    }
+    .entr-inpt {
+        border-style: solid; 
+        border-width: 1px;
+        /* border-color: orange; */
+        border-radius: 5px;
+        height: 37px;
+        font-size: 14px;
+        width: 82%;
+        /* margin-left: 120px; */
+        font-family: Poppins;
+      }
+      .smt-btn {
+        border-radius: 8px;
+        height: -9px;
+        /* width: 30%; */
+        /* text-align: center; */
+        color: white;
+        font-family: Poppins;
+        padding: 7px;
+        background-color: #3247D5;
+        /* text-decoration: none; */
+        /* position: absolute; */
+        outline-style: auto;
+        font-weight: bold;
+        /* left: 100%; */
+    }
+    

@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.bbx {
+  border: 1px solid red;
+  padding: 50px;
+  margin-top: 2%;
+  max-height: 100vh;
+  min-width: 100vw;
+}
+.head-top {
+  color: #ff0000;
+  font-weight: bolder;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 35px;
+}
+/* .bg-color {
+     background-color: whitesmoke;
+     margin-top: 30px;
+     border-radius: 28px;
+     height: 115px;
+     padding: 2%;
+     width: 100%;
+ } */
+
+.tbw {
+  max-width: 50vw;
+  margin-top: 26px;
+  border-width: 1px;
+  border-color: inherit;
+  border-style: solid;
+
+  /*padding:16px 28px;*/
+}
+.tbg {
+  background-color: rgb(152, 152, 174) !important;
+  height: 26px;
+  max-width: 50vw;
+  color: ghostwhite;
+  
+}
+.tbw th,
+.tbg1 td {
+  padding: 8px;
+}
+/*.tbg1 td {
+     padding: 8px;
+ }*/
+
+/* tr:nth-child(even) {
+     background-color: gray !important;
+ }
+ .control {
+     height: 40px;
+     padding: 6px 19px;
+     font-size: 13px;
+     border-radius: 5px;
+ }
+ 
+ .buttons-upload {
+     border-radius: 5px;
+     white-space: nowrap;
+     background-color: deepskyblue;
+     color: ghostwhite;
+     margin-top: 25px;
+     cursor: pointer;
+     border: 1px solid transparent;
+     padding: 6px 12px;
+     font-size: 14px;
+    
+ }
+ 
+ .labelfield {
+    
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     margin-top: -25px;
+     margin-left:-47px;
+     font-size:13px;
+     padding: 15px;
+     justify-content: center;
+ }
+ .labelfield li{
+ 
+     margin-left:30px;
+    
+ }
+ .FieldFrist {
+     background-color:aqu;
+     height: 115px;
+     width: 100%;
+     margin-top: 35px;
+     padding: 2%;
+     border-radius: 28px;
+ } */
+.inpt-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+}
+.entr-inpt {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  border-radius: 5px;
+  height: 41px;
+  min-width: 100%;
+  margin-left: 2px;
+  font-family: Poppins;
+}
+.entr-inpt::placeholder {
+  font-size: 16px;
+  font-family: Poppins;
+}
+
+.smt-btn {
+  height: 40px;
+  width: 120px;
+  font-size: 14px;
+  color: whitesmoke;
+  font-weight: bold;
+  background-color: orangered;
+  border: 20px;
+  border-radius: 8px;
+  margin: 35px 0 18px 34px; 
+}

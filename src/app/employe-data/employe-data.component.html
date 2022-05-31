@@ -1,0 +1,98 @@
+<div class="container-fuild">
+  <div class="card">
+    <h2 style="text-align: center; margin-top: 20px">IDDetails</h2>
+    <br />
+    <br />
+    <div class="row">
+      <div class="col-lg-2"></div>
+      <div class="col-lg-3">
+        <input class="fld" type="text" placeholder="enteryourID" [(ngModel)]="IDType"
+        name="IDType"/><br />
+        <input class="fld" type="text" placeholder="enteryourName"[(ngModel)]="Number"
+        name="Number" /><br />
+        <input class="fld" type="text" placeholder="Gender" [(ngModel)]="NameOnDocument"
+        name="NameOnDocument" /><br />
+       
+      </div>
+      <div class="col-lg-3">
+        <input class="fld" type="text" placeholder="DateOfJoining" [(ngModel)]="IssuingAuthority"
+        name="IssuingAuthority"/><br />
+        <input class="fld" type="text" placeholder="DateOfBirth" [(ngModel)]="PlaceOfIssue"
+        name="PlaceOfIssue"/><br />
+        <input class="fld" type="text" placeholder="Role" [(ngModel)]="IssueDate"
+        name="IssueDate" /><br />
+        <input class="fld" type="text" placeholder="Email" [(ngModel)]="ExpiryDate"
+        name="ExpiryDate"/><br />
+        
+      </div>
+      <!-- <div class="col-lg-3">
+        <input class="fld" type="text" placeholder="Address"[(ngModel)]="Address"
+        name="Address" /><br />
+        <input class="fld" type="text" placeholder="Country" [(ngModel)]="Country"
+        name="Country"/><br />
+        <input class="fld" type="text" placeholder="State" [(ngModel)]="State"
+        name="State"/><br />
+        <input class="fld" type="text" placeholder="City"[(ngModel)]="City"
+        name="City" /><br />
+        <input class="fld" type="text" placeholder="Pincode"[(ngModel)]="Pincode"
+        name="Pincode" /><br />
+      </div> -->
+    </div>
+    <div class="row">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4">
+        <input class="fld" class="smt-btn" type="submit" value="Submit" (click)="insertDetails()"/>
+      </div>
+      <div class="col-lg-4"></div>
+    </div>
+
+    <div class="row">
+        <table class="tbw">
+          <tr class="tbg">
+            <th>IDType</th>
+            <th>Number</th>
+            <th>NameOnDocument</th>
+            <th>IssueDate</th>
+            <th>ExpiryDate</th>
+            <th>IssuingAuthority</th>
+            <th>PlaceOfIssue</th>
+            <!-- <th>DateOfBirth</th>
+            <th>Age</th>
+            <th>BloodGroup</th>
+            <th>Mobilenumber</th>
+            <th>Address</th>
+            <th>Country</th>
+            <th>State</th>
+            <th>City</th>
+            <th>Pincode</th> -->
+
+          </tr>
+  
+          <tr *ngFor="let details of idDetailsList">
+            <td>{{ details.idType }}</td>
+            <td>{{ details.number }}</td>
+            <td>{{ details.nameOnDocument }}</td>
+            <td>{{ details.issueDate }}</td>
+            <td>{{ details.expiryDate }}</td>
+            <td>{{ details.issuingAuthority }}</td>
+            <td>{{ details.placeOfIssue }}</td>
+            <!-- <td>{{ details.dateOfBirth }}</td>
+            <td>{{ details.age }}</td>
+            <td>{{ details.bloodGroup }}</td>
+            <td>{{ details.mobilenumber }}</td>
+            <td>{{ details.address }}</td>
+            <td>{{ details.country }}</td>
+            <td>{{ details.state }}</td>
+            <td>{{ details.city }}</td>
+            <td>{{ details.pincode }}</td> -->
+          </tr>
+        </table>
+
+
+
+
+
+
+
+  </div>
+</div>

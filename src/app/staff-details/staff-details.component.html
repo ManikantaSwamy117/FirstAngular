@@ -1,0 +1,65 @@
+<div class="container">
+    <br> <br> <br>
+<div class="card">
+    <br /><br />
+    <div class="row">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-2">
+        <label>EmployeeID*</label>
+        <input type="text" placeholder="Enter your ID"  class="entr-inpt"  [(ngModel)]="enteryourID"
+        name="enteryourID"/>
+      </div>
+
+      <div class="col-lg-2">
+        <label>EmployeeName*</label>
+        <input type="text" placeholder="Enter Your Name" class="entr-inpt" [(ngModel)]="employeeName"  name="employeeName" />
+      </div>
+
+      <div class="col-lg-2">
+        <label>Department*</label>
+        <input type="text" placeholder="Department"   class="entr-inpt" [(ngModel)]="department"  name="department"/>
+      </div>
+      <div class="col-lg-2">
+        <label>Gender*</label>
+        <input type="text" placeholder="Gender"  class="entr-inpt"  [(ngModel)]="gender"  name="gender"/>
+      </div>
+    </div>
+    <br /><br /><br />
+
+    <div class="row">
+      <div class="col-lg-1"></div>
+      <div class="col-lg-2">
+        <label>Position*</label>
+        <input type="text" placeholder="Position"  class="entr-inpt" [(ngModel)]="position"  name="position" />
+      </div>
+      <div class="col-lg-2">
+        <label>PhoneNumber*</label>
+        <input type="text" placeholder="PhoneNumber"  class="entr-inpt" [(ngModel)]="phoneNumber"  name="phoneNumber" />
+      </div>
+      <div class="col-lg-2">
+        <label>Email*</label>
+        <input type="text" placeholder="Enter your Email"  class="entr-inpt" [(ngModel)]="email"  name="email" />
+      </div>
+      <div class="col-lg-2">
+        <label>Date of Joining*</label>
+        <input type="Date" placeholder="Date of Joining"  class="entr-inpt" [(ngModel)]="dateofJoining"  name="posidateofJoiningtion" />
+      </div>
+      <div class="col-lg-2">
+        <label>Manager*</label>
+        <input type="text" placeholder="Manager"  class="entr-inpt" [(ngModel)]="manager"  name="manager" />
+      </div>
+
+</div><br /><br />
+<div class="row">
+    <div class="col-lg-8"></div>
+    <div class="col-lg-1">
+    <button class="smt-btn" (click)="post()">{{submit}}</button>
+   </div>
+   <div class="col-lg-2">
+    <button class="smt-btn"  routerLink="/Staff">Cancel</button>
+   </div>
+   <br />
+   <br />
+</div>
+
+</div>

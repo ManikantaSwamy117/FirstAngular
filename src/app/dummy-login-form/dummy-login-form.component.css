@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.bg-img{
+
+    background-image: url("../../assets/Images/wallpaperflare.com_wallpaper.jpg");
+    height: 100vh;
+    min-width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card{
+  border-radius: 15px;
+  background-color: rgb(189, 174, 174);
+  width: 100%;
+  margin-top: 20px;
+  /* height: 81vh; */
+  max-height: 100vh;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.feld{
+max-width: 50%;
+font-size: 18px;
+height: 46px;
+border-radius: 14px;
+margin-left: 25%;
+
+outline: none;
+}
+.feld:hover{
+
+  background-color:black;
+  color:white;
+}
+
+
+
+.feld::placeholder{
+
+font-size: 16px;
+font-family:'Franklin Gothic Medium';
+padding: 15px;
+
+}
+.val-bn {
+  background-color: orangered;
+  border: none;
+  border-radius: 12px;
+  color: black;
+  padding: 7px 16px;
+  font-size: 16px;
+  width: 110px;
+  margin-left: 155px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  }
+  .val-bn:hover {
+
+background-color: yellow;
+
+
+  }

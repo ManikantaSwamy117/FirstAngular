@@ -1,0 +1,46 @@
+<div class="container-fluid">
+  <br />
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="cardshome">
+        <div class="row header-text">
+          <p class="para1">Announcement</p>
+        </div>
+        <br />
+        <p style="font-family: Poppins">
+          No
+          <br />
+          Announcements Today!
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="cardshome">
+        <div class="row header-text1">
+          <p class="para1">Holidays</p>
+        </div>
+        <br />
+        <div class="row">
+          <div class="col-lg-4">
+            <p *ngFor="let list of holiday">
+              <img src="{{ list.attchament }}" style="width: 60px;"/>
+            </p>
+          </div>
+          <div class="col-lg-4">
+            <!-- <p style="font-family: Poppins">Deepavali <br /></p> -->
+            <div class="row" style="white-space: nowrap;">
+                <p *ngFor="let list of holiday">
+                    {{list.holidayDescription}},<br>
+                    {{list.holidayDate|date}},
+                </p>
+                
+            </div>
+           
+          </div>
+          <hr style="width: 253px;  padding: 0px" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

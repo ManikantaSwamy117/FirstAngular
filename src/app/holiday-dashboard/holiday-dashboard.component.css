@@ -1,0 +1,144 @@
+.headings{
+    height: 15px;
+    left: 221px;
+    top: 50px;
+    font-family:'Poppins';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 15px;
+    letter-spacing: 0.5px;
+    color: #3247D5;
+    /* margin-left:39px; */
+    }
+    body,button,p{
+        font-family: 'Poppins';
+        font-size: 14px;
+        cursor: pointer; 
+      }
+    
+    
+    
+    input{
+        font-size: 10px;
+      }
+    
+    
+    
+     .addnew{
+          width: 116px;
+          height: 37px;
+          background: #3247D5;
+          border-radius: 5px;
+          color: white;
+          text-align: center;
+          border: none;
+          float: right;
+          margin-right: 10px;
+        }
+
+        .addnew1{
+          width: 116px;
+          height: 37px;
+          background: #3247D5;
+          border-radius: 5px;
+          color: white;
+          text-align: center;
+          border: none;
+          float: right;
+         
+        }
+    
+    
+    
+    
+    --Heading Text CSS--
+    
+ 
+    
+    --table CSS--
+    
+    
+    
+    
+        .tableheader{                           
+          width: 1199px;
+          height: 50px;
+          right: 20px;
+          top: 264px;
+          background: #02CFFF;
+          border-top-left-radius: 12px;
+          border-top-right-radius: 12px;
+          color:white;
+            }
+            .tabletext{
+              height: 17px;
+              left: 17.5%;
+              right: 76.67%;
+              top: 331px;
+              font-weight: normal;
+              font-size: 13px;
+              line-height: 17px;
+              color: #0C275A;
+            }
+    
+    
+           th{
+             background-color: #02CFFF ;
+             color:white;
+           }
+    
+            th:first-of-type {
+              border-top-left-radius: 10px;       
+            }        
+            th:last-of-type {
+    
+              border-top-right-radius: 10px;        
+            }      
+            tr:last-of-type td:first-of-type {       
+              border-bottom-left-radius: 10px;      
+            }
+            
+            tr:last-of-type td:last-of-type {      
+              border-bottom-right-radius: 10px;
+            
+            }       
+            table,        
+            tr,        
+            td {      
+              border: none !important;
+              font-family: Poppins;
+              font-style: normal;
+              font-weight: normal;
+              font-size: 13px;
+              color: #0C275A;
+              /* width: 78vw;
+              margin-left: 28px; */
+            
+            }      
+            tr:nth-child(odd) {
+            
+              background-color: #FFFFFF !important
+            
+            }       
+            tr:nth-child(even) {
+            
+              background-color: #F2F2F2 !important
+            
+            }
+    
+            .card {
+              padding: 20px;
+              background: #ffffff;
+              box-shadow: 1px 1px 15px 3px rgb(0 0 0 / 12%);
+              border-radius: 12px;
+              /* width: 77vw; */
+              /* margin-left: 25px; */
+            }
+            
+    .emp{
+        font-size: 16px;
+    }
+    .leave{
+        margin-top: -45px;
+    }
