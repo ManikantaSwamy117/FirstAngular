@@ -4,10 +4,11 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class StudentService {
+  GetCityMaster() {
+    throw new Error('Method not implemented.');
+  }
   
-  
- 
-  url: any;
+   url: any;
 
   constructor(private http: HttpClient) {}
 
@@ -46,7 +47,6 @@ public DeleteStudentDetails(id:any){
 }
 
 
-
 public GetCompany()
 {
 
@@ -64,8 +64,7 @@ public UpdateCompany(data: any) {
   this.url = this.host + '/Doctor/UpdateCompany';
   return this.http.post(this.url, data);
 }
-
-   
+ 
 public DeleteCompany(id:any){
   return this.http.get<any[]>(this.host+"Doctor/DeleteCompany?ID="+id)
   
@@ -114,16 +113,33 @@ return this.http.get<any[]>(this.host+ 'Doctor/GetHolidaysCount')
 }
 
 
+public GetEmployeData()
+{
 
+return this.http.get<any[]>(this.host+ 'Doctor/GetEmployeData')
 
+}
 
+public GetCityData()
+{
 
+return this.http.get<any[]>(this.host+ 'Doctor/GetCityMaster')
 
+}
 
+public GetStateData()
+{
 
+return this.http.get<any[]>(this.host+ 'Doctor/GetStateMaster')
 
+}
 
+public GetCountryData()
+{
 
+return this.http.get<any[]>(this.host+ 'Doctor/GetCountryMaster')
+
+}
 
 
 public GetHolidayTable() {
@@ -145,7 +161,6 @@ public DeleteHolidayTable(id:any){
 }
 
 public GetStaff1(){
-
 
 return this.http.get<any[]>(this.host+ 'Doctor/GetStaff1')
 
@@ -189,6 +204,29 @@ public InsertEmployeDetails(data: any) {
 public InsertIDDetails(data: any) {
   this.url = this.host + '/Doctor/InsertIDDetails';
   return this.http.post(this.url, data);
+}
+public GetLevelMaster()
+{
+
+return this.http.get<any[]>(this.host+ 'Doctor/GetLevelMaster')
+
+}
+
+
+public InsertLevelMaster(data: any) {
+  this.url = this.host + 'Doctor/InsertLevelMaster';
+  return this.http.post(this.url, data);
+}
+
+public UpdateLevelMaster(data: any) {
+  this.url = this.host + 'Doctor/UpdateLevelMaster';
+  return this.http.post(this.url, data);
+}
+
+   
+public DeleteLevelMaster(id:any){
+  return this.http.get<any[]>(this.host+"Doctor/DeleteLevelMaster?ID="+id)
+  
 }
 
 }

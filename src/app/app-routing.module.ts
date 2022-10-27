@@ -29,12 +29,19 @@ import { StaffDetailsComponent } from './staff-details/staff-details.component';
 import { CompanyDetailsComponent } from './company-details/company-details.component';
 import { AmazeDataComponent } from './amaze-data/amaze-data.component';
 import { AmazeStaffDetailsComponent } from './amaze-staff-details/amaze-staff-details.component';
+import { FliterTableComponent } from './fliter-table/fliter-table.component';
+import { CityComponent } from './city/city.component';
+import { StateComponent } from './state/state.component';
+import { CountryComponent } from './country/country.component';
+import { LevelDasBoardComponent } from './level-das-board/level-das-board.component';
+import { LevelFormComponent } from './level-form/level-form.component';
 
 const routes: Routes = [
  
   //  { path: 'home', component: HomeComponent },
   // { path:'about', component: AboutComponent },
   // { path:'EmployeDashBoard', component: EmployeDashBoardComponent }
+  {path: '', redirectTo:'/DummyLoginForm', pathMatch: 'full'},
   {path: '', redirectTo:'/DashBoard', pathMatch: 'full'},
   { path:'DashBoard', component: DashBoardComponent },
   { path:'Table', component: TableComponent },
@@ -67,6 +74,13 @@ const routes: Routes = [
   { path:'AmazeData', component:AmazeDataComponent },
   { path:'AmazeStaffDetails', component: AmazeStaffDetailsComponent },
   { path:'AmazeStaffDetails/:id', component: AmazeStaffDetailsComponent },
+  { path:'FliterTable', component: FliterTableComponent },
+  { path:'City', component: CityComponent },
+  { path:'State', component: StateComponent },
+  { path:'Country', component: CountryComponent },
+  { path:'LevelMaster', component: LevelDasBoardComponent }, 
+  { path:'LevelForm', component: LevelFormComponent },
+  { path:'LevelForm/:id', component: LevelFormComponent },
 ];
 
 @NgModule({

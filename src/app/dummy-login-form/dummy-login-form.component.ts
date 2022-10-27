@@ -45,7 +45,7 @@ export class DummyLoginFormComponent implements OnInit {
         }
       })
 
-      location.href = '/LoginForm';
+      location.href = '/NewDashBoard';
     } else {
       Swal.fire(
         'Please Enter Your Details!',

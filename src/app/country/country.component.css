@@ -1,4 +1,3 @@
-
 .smt-btn {
     height: 39px;
     width: 190px;
@@ -30,13 +29,8 @@
   .tbw th,
   .tbg td {
     padding: 8px;
-   
   }
-th{
 
-white-space:nowrap;
-
-}
   .fld{
 
     border-radius: 13px;
@@ -47,9 +41,87 @@ white-space:nowrap;
     
 }
 
+/* --------------------------------------------------------------------------------------------------------------- */
+/* .addnew{
+  width: 116px;
+  height: 37px;
+  background: #3247D5;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  border: none;
+  float: right;
+  margin-right: 10px;
+}
+
+.tableheader{                           
+  width: 1199px;
+  height: 50px;
+  right: 20px;
+  top: 264px;
+  background: #02CFFF;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  color:white;
+    }
+    .tabletext{
+      height: 17px;
+      left: 17.5%;
+      right: 76.67%;
+      top: 331px;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 17px;
+      color: #0C275A;
+    }
+
+
+   th{
+     background-color: #02CFFF ;
+     color:white;
+   }
+
+    th:first-of-type {
+      border-top-left-radius: 10px;       
+    }        
+    th:last-of-type {
+
+      border-top-right-radius: 10px;        
+    }      
+    tr:last-of-type td:first-of-type {       
+      border-bottom-left-radius: 10px;      
+    }
+    
+    tr:last-of-type td:last-of-type {      
+      border-bottom-right-radius: 10px;
+    
+    }       
+    table,        
+    tr,        
+    td {      
+      border: none !important;       
+      font-family: Poppins;       
+      font-style: normal;       
+      font-weight: normal;        
+      font-size: 13px;
+      /* line-height: 17px;        */
+      /* color: #0C275A;
+    
+    }      
+    tr:nth-child(odd) {
+    
+      background-color: #FFFFFF !important
+    
+    }       
+    tr:nth-child(even) {
+    
+      background-color: #F2F2F2 !important
+    
+    } */ 
+
     .headings{
       height: 15px;
-      left: 33px;
+      /* left: -38px; */
       top: 22px;
       position: absolute;
       font-style: normal;
@@ -59,23 +131,8 @@ white-space:nowrap;
       letter-spacing: 0.5px;
       color: #3247D5;
   }
-  .heading11{
-    height: 14px;
-    /* left: 44%; */
-    /* top: 100px; */
-    /* font-style: normal; */
-    font-weight: bold;
-    font-size: 14px;
-    font-family: 'Poppins';
-    /* line-height: 15px; */
-    letter-spacing: 0.5px;
-    color: whitesmoke;
-    /* display: inline-block; */
-    margin-left: 2%;
-    color: blue;
-}
       .addnew{
-        width: 100%;
+        width: 116px;
         height: 37px;
         font-size: 14px;
         font-weight: bold;
@@ -84,23 +141,23 @@ white-space:nowrap;
         color: white;
         text-align: center;
         border: none;
-     
+        float: right;
        
       }
       .addnew1{
-        width: 100%;
-        height: 37px;
         font-size: 14px;
-        font-weight: bold;
-        background: #3247D5;
-        border-radius: 5px;
-        color: white;
-        text-align: center;
+        font-weight: 600;
+        color: black;
         border: none;
+        float: right;
+        position: absolute;
+        top: 67%;
+        left: 197%;
+        font-family: 'Poppins';
         margin-top: 20px;
       }
       .addnew2{
-        width: 100%;
+        width: 116px;
         height: 37px;
         font-size: 14px;
         font-weight: bold;
@@ -114,7 +171,7 @@ white-space:nowrap;
       }
       
     .tableheader{                           
-      width: 100vw;
+      /* width: 100vw; */
       height: 50px;
       right: 20px;
       top: 264px;
@@ -163,15 +220,12 @@ white-space:nowrap;
           font-family: Poppins;
           font-style: normal;
           font-weight: 400;
-          font-size: 13px;
+          font-size: 14px;
           /* line-height: 17px; */
           color: #0C275A;
-          white-space: nowrap;
-          /* width: 0vw; */
-          /* margin-left: 2%; */
+          /* padding: 27px; */
           /* height: 8vh;*/
-      }
-          
+         }      
          tr:nth-child(odd) {
          
            background-color: #FFFFFF !important
@@ -185,14 +239,14 @@ white-space:nowrap;
 
         .card{ 
           padding: 41px;
-          background: #ffffff;
-          /* box-shadow: 1px 1px 15px 3px rgb(0 0 0 / 12%); */
-          border-radius: 16px;
-          height: auto;
-          /* width: 71vw; */
-          /* position: relative; */
-          /* left: 4%; */
-          /* margin-top: 53px;*/
+    background: #ffffff;
+    box-shadow: 1px 1px 15px 3px rgb(0 0 0 / 12%);
+    border-radius: 16px;
+    /* min-width: 84vw; */
+    height: auto;
+    position: relative;
+    /* left: -5%; */
+    margin-top: 53px;
         }
 
         .entr-inpt {

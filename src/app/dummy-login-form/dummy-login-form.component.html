@@ -1,56 +1,90 @@
-<div class="container-fuild bg-img">
-  <div class="row">
-    <div class="col-lg-4">
-      <div class="card">
-        <div class="row">
-          <img
-            src="../../assets/Images/img_avatar.png"
-            class="img-circle"
-            width="304"
-            height="236"
-            style="    width: 48%;
-            border-radius: 108px;
-            height: 25vh;
-            padding: 38px;
-            margin-left: 106px;"
-          />
-        </div>
-        <div class="row">
-          <input type="text" placeholder="Enter Your Name" class="feld" [(ngModel)]="name" name="name" />
-        </div>
-        <br />
-        <br />
-        <div class="row">
-          <input
-            type="{{dynamictype}}"
-            placeholder="Enter Your Password"
-            class="feld"
-            [(ngModel)]="password" name="password" 
-            id="myInput" 
-          />
-        </div>
-        <br>
-        <div class="row">
-          <div class="col-lg-6">
-           
-            <input type="checkbox" style="position: relative; left:54%; top:55%;" (change)="myFunction($event)"/>
+<html>
+  <body>
+    <div class="container-fuild bg-img">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="row">
+              <img
+                src="../../assets/Images/img_avatar.png"
+                class="img-circle"
+                width="304"
+                height="236"
+                style="
+                  width: 48%;
+                  max-width: 100px;
+                  max-height: 100px;
+                  border-radius: 108px;
+                  padding: -2px;
+                  margin: 10px 0 20px 150px;
+                "
+              />
+            </div>
+            <div class="row">
+              <input
+                type="text"
+                placeholder="Enter Your Name"
+                class="feld"
+                [(ngModel)]="name"
+                name="name"
+              />
+            </div>
+            <br />
+            <br />
+            <div class="row">
+              <input
+                type="{{ dynamictype }}"
+                placeholder="Enter Your Password"
+                class="feld"
+                [(ngModel)]="password"
+                name="password"
+                id="myInput"
+              />
+            </div>
+            <br />
+            <div class="row">
+              <div class="col-lg-6">
+                <input
+                  type="checkbox"
+                  style="position: relative; left: 54%; top: 55%"
+                  (change)="myFunction($event)"
+                />
+              </div>
+              <div class="col-lg-1">
+                <p
+                  class=""
+                  style="
+                    font-size: 14px;
+                    font-weight: bold;
+                    color: rgb(25, 19, 3);
+                    position: relative;
+                    left: -230%;
+                    top: 55%;
+                    white-space: nowrap;
+                  "
+                >
+                  Show Me Password
+                </p>
+              </div>
+            </div>
+
+            <br />
+            <br />
+            <br />
+            <br />
+            <div class="row">
+              <input
+                type="button"
+                class="val-bn"
+                value="Login"
+                (click)="login()"
+              />
+            </div>
+
+            <div class="col-lg-8"></div>
           </div>
-          <div class="col-lg-1"><p style="font-size:14px; font-weight:bold; color:rgb(25, 19, 3); position: relative; left:-230%; top:55%; white-space: nowrap;">Show Me Password</p></div>
         </div>
-
-         <br>
-          <br>
-          <br>
-          <br>
-<div class="row">
-    <input type="button" class="val-bn" value="Login" (click)="login()">
-
-</div>
-
-          <div class="col-lg-8"></div>
-       
       </div>
     </div>
-  </div>
-</div>
-
+  </body>
+</html>

@@ -34,54 +34,6 @@ export class AmazeDataComponent implements OnInit {
     });
   }
 
-  insert() {
-    debugger;
-    {
-      debugger;
-
-      if (
-        this.employeeID != undefined &&
-        this.employeeID != '' &&
-        this.employeeName != undefined &&
-        this.employeeName != '' &&
-        this.employeeRole != undefined &&
-        this.employeeRole != '' &&
-        this.dateOfJoining != undefined &&
-        this.dateOfJoining != '' &&
-        this.gender != undefined &&
-        this.gender != '' &&
-        this.workLocation != undefined &&
-        this.workLocation != '' &&
-        this.salary != undefined &&
-        this.salary != '' &&
-        this.address != undefined &&
-        this.address != '' &&
-        this.pincode != undefined &&
-        this.pincode != ''
-      ) {
-        debugger;
-        var entity = {
-          EmployeeID: this.employeeID,
-          EmployeeName: this.employeeName,
-          EmployeeRole: this.employeeRole,
-          DateOfJoining: this.dateOfJoining,
-          Gender: this.gender,
-          WorkLocation: this.workLocation,
-          Salary: this.salary,
-          Address: this.address,
-          Pincode: this.pincode,
-        };
-        this.StudentService.InsertAmazeCompanyDetails(entity).subscribe(
-          (data) => {
-            alert('Saved Successfully');
-            location.href = '/AmazeData';
-          }
-        );
-      } else {
-        alert('sorry some field is empty');
-      }
-    }
-  }
 
   delete(id: any) {
     debugger;

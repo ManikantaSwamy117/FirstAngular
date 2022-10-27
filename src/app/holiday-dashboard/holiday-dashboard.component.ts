@@ -63,22 +63,22 @@ delete(id:any){
 }
 
 
-insertDetails() {
-  debugger;
-  var entity = {
-    holidays: this.holidays,
-    holidayDescription: this.holidayDescription,
-    holidayDate: this.holidayDate,
-    location: this.location,
-    attchament: this.attchament,
+// insertDetails() {
+//   debugger;
+//   var entity = {
+//     holidays: this.holidays,
+//     holidayDescription: this.holidayDescription,
+//     holidayDate: this.holidayDate,
+//     location: this.location,
+//     attchament: this.attchament,
   
-  };
-  this.StudentService.InsertStudentDetails(entity).subscribe(data => {
-    alert('Saved Successfully');
+//   };
+//   this.StudentService.InsertStudentDetails(entity).subscribe(data => {
+//     alert('Saved Successfully');
 
-    location.href='/HolidayDashboard';
-  });
-}
+//     location.href='/HolidayDashboard';
+//   });
+// }
 
 
 edit(id:number)

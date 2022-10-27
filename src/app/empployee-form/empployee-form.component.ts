@@ -1,6 +1,7 @@
 // import { ConditionalExpr } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import Swal from 'sweetalert2';
 import { StudentService } from '../student.service';
 
 @Component({
@@ -106,7 +107,15 @@ post()
         location.href ='/HolidayDashboard';
       });
     } else {
-      alert('sorry some field is empty');
+      Swal.fire({
+        title: 'Please Enter The Details',
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      })
     }
   }
   Update() {
@@ -140,19 +149,17 @@ post()
         location.href ='/HolidayDashboard';
       });
     } else {
-      alert('sorry some field is empty');
+      Swal.fire({
+        title: 'Please Enter The Details',
+        showClass: {
+          popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+          popup: 'animate__animated animate__fadeOutUp'
+        }
+      })
     }
   }
-
-
-
-
-
-
-
-
-
-
 
 
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
 import { StudentService } from '../student.service';
 import { ActivatedRoute } from '@angular/router';
+import Swal from 'sweetalert2';
 @Component({
   selector: 'app-staff-details',
   templateUrl: './staff-details.component.html',
@@ -58,12 +58,10 @@ debugger
         this.email = temp[0].email,
         this.dateofJoining = temp[0].dateofJoining,
         this.manager = temp[0].manager
-      
-      
+       
     })
 
   };
-
 
   post()
   {
@@ -76,8 +74,6 @@ debugger
       this.insert(); 
     }
   }
-
-
 
   insert() {
     debugger;
@@ -115,11 +111,11 @@ debugger
         manager: this.manager
       };
       this.StudentService.InsertStaff1(entity).subscribe((data) => {
-        alert('Saved Successfully');
+        Swal.fire('Saved Successfully');
         location.href = '/Staff';
       });
     } else {
-      alert('sorry some field is empty');
+      Swal.fire('Opps some fields are empty');
     }
   }
   Update() 

@@ -34,6 +34,12 @@ import { StaffDetailsComponent } from './staff-details/staff-details.component';
 import { CompanyDetailsComponent } from './company-details/company-details.component';
 import { AmazeStaffDetailsComponent } from './amaze-staff-details/amaze-staff-details.component';
 import { AmazeDataComponent } from './amaze-data/amaze-data.component';
+import { FliterTableComponent } from './fliter-table/fliter-table.component';
+import { CityComponent } from './city/city.component';
+import { StateComponent } from './state/state.component';
+import { CountryComponent } from './country/country.component';
+import { LevelDasBoardComponent } from './level-das-board/level-das-board.component';
+import { LevelFormComponent } from './level-form/level-form.component';
 
 @NgModule({
   declarations: [
@@ -64,6 +70,12 @@ import { AmazeDataComponent } from './amaze-data/amaze-data.component';
     CompanyDetailsComponent,
     AmazeStaffDetailsComponent,
     AmazeDataComponent,
+    FliterTableComponent,
+    CityComponent,
+    StateComponent,
+    CountryComponent,
+    LevelDasBoardComponent,
+    LevelFormComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,93 +1,6 @@
-<!-- <div class="container-fuild">
-    <div class="topnav">
-      <img class="logo-img" src="../../assets/Images/120.png" />
-      <div class="box1">
-        <p
-          style="
-            font-family: Poppins;
-            font-family: Poppins;
-            font-size: 18px;
-            font-weight: bold;
-            margin: 7px 2px 2px 21px;
-          "
-        >
-          12
-        </p>
-      </div>
-      <div class="box2">
-        <p
-          style="
-            font-family: Poppins;
-            font-family: Poppins;
-            font-size: 18px;
-            font-weight: bold;
-            margin: 7px 2px 2px 21px;
-          "
-        >
-          00
-        </p>
-      </div>
-      <div class="box3">
-        <p
-          style="
-            font-family: Poppins;
-            font-family: Poppins;
-            font-size: 18px;
-            font-weight: bold;
-            margin: 7px 2px 2px 21px;
-          "
-        >
-          AM
-        </p>
-      </div>
-      <h3 class="heading">DashBoard</h3>
-  
-      <i
-        class="material-icons"
-        style="font-size: 48px; color: whitesmoke; display: in-block"
-      ></i>
-      <div class="dropdown">
-        <button class="dropbtn">Sign-in</button>
-        <div class="dropdown-content">
-          <a href="#">Sign-in</a>
-          <a href="#">Sign-out</a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-2" style="background-color:aliceblue;height:100vh;margin-top: -22px;">
-          <div class="row side-view">
-            <span>DashBOard</span>
-            <hr />
-          </div><br>
-          <div class="row side-view">
-            <span>SetUp</span>
-            <hr />
-          </div><br>
-          <div class="row side-view">
-            <span>Catagory</span>
-            <hr />
-          </div><br>
-          <div class="row side-view">
-            <span>Training</span>
-            <hr />
-          </div><br>
-          <div class="row side-view">
-            <span>Topic</span>
-            <hr />
-          </div><br>
-          <div class="row side-view">
-            <span style="white-space:nowrap">Assign Trainer</span>
-            <hr />
-          </div><br>
-          <div class="row side-view">
-            <span>Help</span>
-            <hr />
-          </div><br>
-        </div> -->
 <div class="col-lg-8">
   <br />
   <br />
-  <!-- <app-dash-board-form></app-dash-board-form> -->
   <div class="row">
     <div class="col-lg-12">
       <h2 class="headings">ENTER YOUR DETAILS</h2>
@@ -161,102 +74,27 @@
       <div class="row">
         <div class="col-lg-2">
           <label for=""> State*</label><br />
-          <input
-            type="text"
-            placeholder=" Enter Your State"
-            [(ngModel)]="state"
-            name="state"
-            class="entr-inpt"
-          /><br />
+          <input type="text" placeholder=" Enter Your State" [(ngModel)]="state" name="state" class="entr-inpt"/><br />
         </div>
         <div class="col-lg-2">
           <label for=""> City*</label><br />
-          <input
-            type="text"
-            placeholder="Enter Your City"
-            [(ngModel)]="city"
-            name="city"
-            class="entr-inpt"
-          /><br />
+          <input type="text" placeholder="Enter Your City" [(ngModel)]="city" name="city" class="entr-inpt"/><br />
         </div>
-        <!-- <div class="col-lg-2">
-                            <label for="">District*</label><br>
-                            <select name="" class="form-control" id="addresstype" name="addresstype"  [(ngModel)]="addresstype">
-                                <option value="">Select District</option>
-                                <option value="Kadapa">Kadapa</option>
-                                <option value="Kurnool">Kurnool</option>
-                                <option value="Mangalor">Mangalor</option>
-                                 <option value="Bangalor">Bangalor</option>
-                                <option value="Darling Harbour">Darling Harbour</option>
-                                <option value="National Park">National Park</option>
-                                <option value="East Perth">East Perth</option>
-                                <option value="Crawley">Crawley</option>
-                                <option value="Whitehall">Whitehall</option>
-                                <option value="Westminster">Westminster</option>
-                                <option value="Bristol West">Bristol West</option>
-                                <option value="Bristol East">Bristol East</option>
-                               
-                              </select>
-                        </div>    -->
       </div>
       <br />
 
       <div class="row">
         <div class="col-lg-7"></div>
         <div class="col-lg-2">
-          <input type="button"  class="smt-btn" *ngIf="id==undefined||id==null"   value="Submit"  id="submit"  (click)="login()"  />
-          <input type="button"  class="smt-btn" *ngIf="id!=undefined||id!=null"   value="Update"  id="submit"  (click)="update()"  />
+          <input type="button" class="smt-btn" *ngIf="id == undefined || id == null" value="Submit" id="submit" (click)="login()"/>
+          <input type="button" class="smt-btn" *ngIf="id != undefined || id != null" value="Update" id="submit" (click)="update()"/>
         </div>
-       
+
         <div class="col-lg-2">
-          <button  class="smt-btn "><a href="/TableData">Cancel</a></button>
+          <button class="smt-btn"><a href="/TableData">Cancel</a></button>
         </div>
       </div>
       <br />
-
-      <!-- <div class="row">
-                        <div class="col-lg-2">
-                            <label for="">Contact Number*</label><br>
-                            <input type="text" class="form-control" id="contactnumber" name="contactnumber" >
-                        </div>
-                        <div class="col-lg-2">
-                            <label for="">ContactRelationship*</label><br>
-                            <input type="text" class="form-control" id="contactRelationship" name="contactRelationship" >
-                        </div>
-                        <div class="col-lg-2">
-                            <label for="">Mobile Number*</label><br>
-                            <input type="text" class="form-control" id="mobilenumber" name="mobilenumber"  >
-                        </div>
-                        <div class="col-lg-2">
-                            <label for="">Office NUmber*</label><br>
-                            <input type="text" class="form-control" id="officeNumber" name="officeNumber"  >
-                        </div>
-                        <div class="col-lg-2">
-                            <label for="">Contact Address*</label><br>
-                            <input type="text" class="form-control" id="postcode" name="postcode" >
-                        </div> 
-                    </div>
-                    <br> -->
-      <!-- <div class="row">
-                        <div class="col-lg-2">
-                            <label for="">Landline Number*</label><br>
-                            <input type="text" class="form-control" id="landlineNumber" name="landlineNumber"  >
-                        </div>
-                            <div class="col-lg-2">
-                                <label for="">Email-ID*</label><br>
-                                <input type="text" class="form-control" id="emailId" name="emailId"  >
-                         </div>
-                        </div>  -->
-
-      <!-- <div class="row">
-                            <div class="col-lg-12">
-                             
-                                <button *ngIf="showButton==0" (click)="submit()">sumbit</button>
-                                <button *ngIf="showButton==1" (click)="edit()">Update</button>
-                                <br>
-                            </div>
-                        
-                        </div> -->
     </div>
   </div>
 </div>

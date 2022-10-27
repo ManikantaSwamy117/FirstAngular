@@ -1,0 +1,50 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-3">
+      <br />
+      <label class="headings">LevelDashBoard</label>
+    </div>
+
+    <div class="col-lg-8">
+      <br />
+      <button routerLink="/LevelForm" class="addnew">Add NEW</button>
+    </div>
+  </div>
+  <br />
+
+  <br />
+  <br />
+  <div class="row">
+    <div>
+      <table class="table" style="width:100%">
+        <tr>
+          <th>ID</th>
+
+          <th>Short</th>
+
+          <th>Description</th>
+
+          <th>Actions</th>
+        </tr>
+        <tr></tr> "
+
+
+        <tr *ngFor="let list of level">
+          <td>{{ list.id }}</td>
+
+          <td>{{ list.short }}</td>
+
+          <td>{{ list.description }}</td> 
+                                                    
+          <td>
+            <button (click)="edit(list.id)" class="addnew">Edit</button>
+            <br />
+            <br />
+            <br />
+            <button (click)="delete(list.id)" class="addnew">Delete</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

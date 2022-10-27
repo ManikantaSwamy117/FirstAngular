@@ -1,0 +1,80 @@
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-11">
+        <label class="headings">State Master</label>
+      </div>
+    </div>
+    <div class="row">
+      <!-- <div class="card">
+        <div class="row">
+          <div class="col-lg-1">
+            <span style="font-family:Poppins;font-weight:600;font-size:14px;">Filter By</span>
+          </div>
+          <div class="col-lg-3">
+            <select style="width: 90%" name="" id="countryID" class="form-control" >
+                <option value="">Select CountryName</option>
+              
+             
+            </select>
+          </div>
+          <div class="col-lg-2">
+            <select class="entr-inpt" id="employeeid" name="employeeid" >
+              <option value="Select Training" >Select State</option>
+              <option value="" ></option>
+             
+            </select>
+          </div>
+          <div class="col-lg-2">
+            <select class="entr-inpt" id="employeeid" name="employeeid">
+              <option value="Select Training" >Select City</option>
+              <option value="" ></option>
+             
+            </select>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  
+    <br />
+    <br />
+    <div class="row"  style="overflow-y: auto;">
+      <div class="col-lg-12">
+        <div>
+          <table class="table">
+            <tr class="tableheader">
+              <th>ID</th>
+              <th>StateName</th>
+              <th>ModifiedBy</th>
+              <th>ModifiedDate</th>
+              <!-- <th>EmployeSalary</th>
+              <th>EmployeRole</th>
+              <th>Address</th>
+              <th>Pincode</th>     
+              <th>CountryName</th>
+              <th>StateName</th>
+              <th>CityName</th> -->
+            </tr>
+            <tr *ngFor="let list of State " class="tabletext">
+              <td>{{ list.id }}</td>
+              <td>{{ list.stateName }}</td>
+              <td>{{ list.modifiedBy }}</td>
+              <td>{{ list.modifiedDate }}</td>
+              <!-- <td>{{ list.employeSalary }}</td>
+              <td>{{ list.employeRole }}</td>
+              <td>{{ list.address }}</td>
+              <td>{{ list.pincode }}</td>
+              <td>{{ list.countryName }}</td>
+              <td>{{ list.stateName }}</td>
+              <td>{{ list.cityName }}</td> -->
+  
+              <!-- <td>
+                <button (click)="delete(list.id)" class="addnew">delete</button><br>
+                <br>
+                <button [routerLink]="['/DashBoardForm',list.id]" class="addnew2">Edit</button>
+              </td> -->
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>

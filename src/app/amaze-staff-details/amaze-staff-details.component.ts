@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { StudentService } from '../student.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-amaze-staff-details',
@@ -117,11 +118,15 @@ debugger
          
         }
         this.StudentService.InsertAmazeCompanyDetails(entity).subscribe((data) => {
-          alert('Saved Successfully');
+          Swal.fire('Saved Sucessfully!');
           location.href = '/AmazeData';
         });
       } else {
-        alert('sorry some field is empty');
+        Swal.fire(
+          'Opps?',
+          'Some Fields Are Empty..!',
+          'error'
+        )
       }
     }
  
@@ -168,11 +173,15 @@ Update() {
        
       }
       this.StudentService.UpdateAmazeCompanyDetails(entity).subscribe((data) => {
-        alert('Update Successfully');
-        location.href = '/AmazeData';
+        Swal.fire('Saved Sucessfully!');
+        location.href= '/AmazeData';
       });
     } else {
-      alert('sorry some field is empty');
+      Swal.fire(
+        'Opps?',
+        'Some Fileds Are Empty..!',
+        'error'
+      )
     }
   }
 

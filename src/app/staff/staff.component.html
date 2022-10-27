@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-lg-11">
       <br />
-      <label class="headings">Staff Dashboard </label>
+      <label class="headings">Staff Dashboard</label>
     </div>
   </div>
   <br />
@@ -12,80 +12,35 @@
         <h6 style="margin: 5px 0 0 20px">Filter By</h6>
       </div>
       <div class="col-lg 1">
-        <select
-        style="width: 90%"
-        name=""
-        id="enteryourID"
-        class="form-control"
-        placeholder="Select Department"
-        name="enteryourID"
-        [(ngModel)]="enteryourID"
-        (change)="filterEmployee()"
-      >
+        <select style="width: 90%" name="" id="enteryourID" class="form-control" placeholder="Select Department" name="enteryourID" [(ngModel)]="enteryourID" (change)="filterEmployee($event)">
         <option value="">Select EmployeeID</option>
-        <option value="{{ list.id }}" *ngFor="let list of staff">
-          {{ list.employeeID }}
-        </option>
-
+        <option value="{{ list.id }}" *ngFor="let list of allstaff">{{ list.employeeID }}</option>
         <option value=""></option>
       </select>
       </div>
 
       <div class="col-lg 1">
-        <select
-          style="width: 90%"
-          name=""
-          id="enteryourID"
-          class="form-control"
-          placeholder="Select Department"
-          name="enteryourID"
-          [(ngModel)]="enteryourID"
-          (change)="filterEmployee()"
-        >
+        <select style="width: 90%" name="" id="enteryourID" class="form-control" placeholder="Select Department" name="enteryourID" [(ngModel)]="enteryourID" (change)="filterdepartment($event)">
           <option value="">Select Department</option>
-          <option value="{{ list.id }}" *ngFor="let list of staff">
-            {{ list.department }}
-          </option>
-
+          <option value="{{ list.department }}" *ngFor="let list of allstaff">{{ list.department }}</option>
           <option value=""></option>
         </select>
       </div>
 
       <div class="col-lg 1">
-        <select
-        style="width: 90%"
-        id="enteryourID"
-        class="form-control"
-        placeholder="Select Department"
+        <select style="width: 90%" id="enteryourID"class="form-control"
+       placeholder="Select Department"
         name="enteryourID"
-        [(ngModel)]="enteryourID"
-        (change)="filterEmployee()"
-      >
+        [(ngModel)]="enteryourID">
         <option value="">Select Gender</option>
-        <option *ngFor="let list of staff" value="{{ list.id }}" >
-          {{ list.gender }}
-        </option>
-
+        <option *ngFor="let list of staff" value="{{ list.id }}" >{{ list.gender }}</option>
         <option value=""></option>
       </select>
       </div>
-
       <div class="col-lg 1">
-        <select
-        style="width: 90%"
-        name=""
-        id="enteryourID"
-        class="form-control"
-        placeholder="Select Department"
-        name="enteryourID"
-        [(ngModel)]="enteryourID"
-        (change)="filterEmployee()"
-      >
+        <select style="width: 90%" name="" id="enteryourID" class="form-control" placeholder="Select Department" name="enteryourID" [(ngModel)]="enteryourID">
         <option value="">Select Your EMail</option>
-        <option value="{{ list.id }}" *ngFor="let list of staff">
-          {{ list.email }}
-        </option>
-
+        <option value="{{ list.id }}" *ngFor="let list of staff">{{ list.email }}</option>
         <option value=""></option>
       </select>
       </div>
@@ -94,12 +49,7 @@
     <div class="row">
       <div class="col-lg-3"></div>
       <div class="col-lg-3">
-        <input
-          style="width: 126%"
-          type="text"
-          placeholder="search for staff"
-          class="form-control"
-        />
+        <input style="width: 126%" type="text" placeholder="search for staff" class="form-control"/>
       </div>
     </div>
   </div>
@@ -109,9 +59,6 @@
     <div class="col-lg-6">
       <label class="headings">SHOWING 97 RESULTS</label>
     </div>
-    <!-- <div class="col-lg-2">
-      <button class="addnew">UPLOAD STAFF</button>
-    </div> -->
     <div class="col-lg-2"></div>
     <div class="col-lg-4">
       <button routerLink="/StaffDetails" class="addnew">Add NEW</button>
