@@ -40,6 +40,9 @@ import { StateComponent } from './state/state.component';
 import { CountryComponent } from './country/country.component';
 import { LevelDasBoardComponent } from './level-das-board/level-das-board.component';
 import { LevelFormComponent } from './level-form/level-form.component';
+import { ErrorComponent } from './error/error.component';
+import { LabelCardComponent } from './label-card/label-card.component';
+import { SrikanthComponent } from './label-card/srikanth/srikanth.component';
 
 @NgModule({
   declarations: [
@@ -76,6 +79,9 @@ import { LevelFormComponent } from './level-form/level-form.component';
     CountryComponent,
     LevelDasBoardComponent,
     LevelFormComponent,
+    ErrorComponent,
+    LabelCardComponent,
+    SrikanthComponent,
   ],
   imports: [
     BrowserModule,

@@ -35,6 +35,8 @@ import { StateComponent } from './state/state.component';
 import { CountryComponent } from './country/country.component';
 import { LevelDasBoardComponent } from './level-das-board/level-das-board.component';
 import { LevelFormComponent } from './level-form/level-form.component';
+import { LabelCardComponent } from './label-card/label-card.component';
+import { SrikanthComponent } from './label-card/srikanth/srikanth.component';
 
 const routes: Routes = [
  
@@ -53,7 +55,6 @@ const routes: Routes = [
   { path:'DummyLoginForm', component: DummyLoginFormComponent },
   { path:'DashBoardForm', component: DashBoardFormComponent },
   { path:'DashBoardForm/:id', component: DashBoardFormComponent },
-
   { path:'Header', component: HeaderComponent },
   { path:'sidebar', component: SidebarComponent },
   { path:'NewDashBoard', component: NewDashBoardComponent },
@@ -81,6 +82,9 @@ const routes: Routes = [
   { path:'LevelMaster', component: LevelDasBoardComponent }, 
   { path:'LevelForm', component: LevelFormComponent },
   { path:'LevelForm/:id', component: LevelFormComponent },
+  { path:'LabelCard', component: LabelCardComponent },
+  { path:'Srikanth', component: SrikanthComponent },
+
 ];
 
 @NgModule({

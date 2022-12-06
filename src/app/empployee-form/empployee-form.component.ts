@@ -33,11 +33,11 @@ export class EmpployeeFormComponent implements OnInit {
 debugger
       if (this.id != undefined) {
         this.GetHolidayTable();
-        this.showButton = 1;
+        //his.showButton = 1;
         this.submit='update';
       }
       else {
-        this.showButton = 0
+        //this.showButton = 0
         this.submit='Submit';
       }
 
